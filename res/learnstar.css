@@ -1,0 +1,57 @@
+/* style.css */
+body {
+    display: flex;
+    /* gallery-header, gallery-container를 세로로 위치 정렬시킴 */
+    flex-direction: column;
+    /* 주축방향 하위 요소 정렬결정 */
+    justify-content: start;
+    /* 교차축방향 하위 요소 정렬결정 */
+    align-items: center;
+    /* height: 100vh하면 하위요소들이 모두 상하방향 중앙에 위치하게 되어 이상하게 됨. */
+    height: 100vh;  
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.gallery-header {
+    /* 블록, h1 style */
+    /* 아래의 gallery-container의 위쪽에 한 줄 배치되게 */
+    display: block;
+    width: 1000px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.gallery-header p {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.gallery-container {
+    display: grid;
+    /* 3개의 열을 가진 그리드를 생성, 각 열은 1/3씩 차지함 */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* 화면의 너비가 600픽셀 이하일 때 적용되는 스타일 */
+@media screen and (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}

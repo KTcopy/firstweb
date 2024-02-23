@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="res/learnstar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="gallery-header">
+        <h1>뉴렉스2023 갤러리</h1>
+        <p>css 조금 어려운 단계:height:auto로 변형 or content 정렬방식 변형, 선택의 문제<br>
+            height: 100vh;를 설정하면 body의 높이가 뷰포트의 높이와 정확히 일치하게 됩니다. <br>
+            flex-direction: column;과 함께 사용하면, flex 컨테이너의 자식 요소들이 세로로 배열되고, 전체 높이가 뷰포트 높이와 일치하게 됩니다.<br>
+            문제는 justify-content: center;와 align-items: center;를 함께 사용하면, 이 자식 요소들이 중앙에 정렬되어 전체 뷰포트 높이를 차지하지 않게 됩니다. 따라서 둘 중 하나의 요소가 보이지 않는 현상이 발생할 수 있습니다.<br>
+            height: auto;로 설정하면, body의 높이는 자식 요소들의 총 높이에 의해 결정됩니다. 이렇게 하면 자식 요소들이 body의 높이를 넘어서려 하더라도 문제가 발생하지 않으며, 모든 자식 요소들이 보이게 됩니다.<br>
+            해결 방법 중 하나는 justify-content와 align-items를 center가 아닌 다른 값으로 설정하는 것입니다. 예를 들어 justify-content: flex-start;로 설정하면 자식 요소들이 상단에 정렬되고, 뷰포트 높이를 넘어서는 부분은 스크롤을 통해 볼 수 있게 됩니다.<br>
+        </p>
+    </div>
+    <div class="gallery-container">
+        <!-- 위와 같이 필요한 만큼 이미지를 추가합니다 -->
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_1.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_2.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_3.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_4.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_5.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_6.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_7.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_8.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_9.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_10.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_11.png" alt="이미지 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/newlex2023cover_12.png" alt="이미지 1">
+        </div>
+    </div>
+</body>
+
+</html>
